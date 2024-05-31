@@ -13,6 +13,7 @@ return {
 					"lua_ls",
 					"ruff",
 					"basedpyright",
+          "mypy",
 					"rust_analyzer",
 				},
 			})
@@ -61,6 +62,7 @@ return {
 			null_ls.setup({
 				sources = {
 					null_ls.builtins.formatting.stylua,
+          null_ls.builtins.diagnostics.mypy,
 				},
 			})
 		end,
